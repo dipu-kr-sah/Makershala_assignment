@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="flex h-10 items-center justify-center bg-yellow-400">
+        <span class="icon-left"></span>
+        <span class="text-title flex align-center justify-center h-max">
+          <span class="after:content-['\00a0']">
+            Join the Parent Board & enjoy exciting benfits.
+          </span>
+
+          <a href="#" class="no-underline text-blue-700">Details here</a>
+        </span>
+      </header>
+
+      <main>
+        <ul
+          class="h-36 flex bg-[#6E07C7] w-full content-between row justify-around items-center text-white text-lg box-border pl-64"
+        >
+          <li class="text-yellow-500 cursor-pointer">Courses</li>
+          <li class="cursor-pointer">
+            <p>DIY Hub</p>
+            <span class="text-yellow-500 text-sm cursor-pointer"
+              >comming soon</span
+            >
+          </li>
+          <li>
+            <img
+              class="h-full cursor-pointer"
+              src="./images/makerShala.svg"
+              alt="maker shala logo"
+            />
+          </li>
+          <li class="cursor-pointer">Competitions</li>
+          <li class="cursor-pointer">Blog</li>
+          <li data-text="Sign In" class="custom-button cursor-pointer">
+            SignIn
+          </li>
+        </ul>
+        <section class="bg-[#F3F7FC] min-h-[100vh]">
+          <div class="head">
+            <aside class="left"></aside>
+            <div class="main-head flex-col flex justify-center items-center">
+              <h2 class="font-bold text-2xl h-max">Competitions</h2>
+              <br />
+              <p class="w-5/12 text-center">
+                Grow your project building skills by competing in our exciting
+                competitions. <br />You can compete as a team member or
+                individually.
+              </p>
+            </div>
+            <aside class="right"></aside>
+          </div>
+          <div class="main-content">
+            <main class="cards-container">
+              <div
+                class="card h-[25rem] bg-cover bg-[url(./images/gaint-wheel.jpg)] w-[18rem] rounded-2xl flex flex-col"
+              >
+                <header class="flex grow w-full"></header>
+                <footer
+                  class="info w-full bg-white h-3/5 flex flex-col rounded-b-2xl"
+                >
+                  <!-- <img src="" class="h-full" /> -->
+                  <p class="font-bold">
+                    Little Wizards - Clay Modelling competition 2021
+                  </p>
+                  <div class="icon-and-details flex flex-row">
+                    <span class="icon box-border mr-4"
+                      ><span class="material-icons-outlined"
+                        >calendar_today</span
+                      ></span
+                    >
+                    <span class="details grow">Hello</span>
+                  </div>
+                  <div class="line border-[1px] w-full"></div>
+
+                  <div
+                    data-text="Enter Now"
+                    class="box-border mt-2 flex justify-center items-center custom-button text-white"
+                  ></div>
+                </footer>
+              </div>
+            </main>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#6308BD] min-h-[300px] box-border py-24">
+        <div class="flex flex-row box-border mx-20 text-white h-[150px]">
+          <div class="image-container grow">
+            <img src="./images/makerShala.svg" class="h-full" />
+          </div>
+          <ul class="footer-menu-container grow flex flex-col">
+            <li class="grow"></li>
+            <li class="grow">Makerbazar</li>
+            <li class="grow">Markerkits</li>
+            <li class="grow">Makermentor</li>
+            <li class="grow">Makerlab</li>
+          </ul>
+          <ul class="footer-menu-container grow flex flex-col">
+            <li class="grow text-[#F2C94C]">About</li>
+            <li class="grow">Our Story</li>
+            <li class="grow">Benefits</li>
+            <li class="grow">Team</li>
+            <li class="grow">Careers</li>
+          </ul>
+          <ul class="footer-menu-container grow flex flex-col">
+            <li class="grow text-[#F2C94C]">Help</li>
+            <li class="grow">FAQs</li>
+            <li class="grow">Contact Us</li>
+            <li class="grow"></li>
+            <li class="grow"></li>
+            <li class="grow"></li>
+          </ul>
+        </div>
+        <main
+          class="box-border md:mx-24 lg:mx-56 pt-24 flex flex-col"
+          id="footer-notes"
+        ></main>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/footerNotes.js"></script>
+  <script src="./js/button.js"></script>
+  <script src="./js/card.js"></script>
+  <script src="./js/script.js"></script>
+</html>
