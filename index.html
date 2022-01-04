@@ -47,7 +47,9 @@
           >
             <p>DIY Hub</p>
             <span
-              class="text-yellow-500 md:text-sm text-normal cursor-pointer md:after:content-[' '] md:before:content-[' '] before:content-['\00a0('] after:content-[')']"
+              after=")"
+              before=" ("
+              class="text-yellow-500 md:text-sm text-normal cursor-pointer"
               >comming soon</span
             >
           </li>
@@ -131,14 +133,14 @@
         class="min-h-[300px] box-border py-24 bg-[url(./images/footerBackground.svg)] bg-cover box-border pt-30"
       >
         <div
-          class="flex md:flex-row flex-wrap sm:flex-col box-border mx-20 text-white min-h-[150px]"
+          class="flex md:flex-row flex-wrap flex-col box-border mx-20 text-white min-h-[150px]"
         >
           <section
             class="image-container box-border px-20 grow flex align-center justify-center"
           >
             <img src="./images/makerShala.svg" class="h-full" />
           </section>
-          <aside class="flex flex-row grow box-border sm:px-20">
+          <aside class="flex flex-row grow box-border sm:px-20 px-0 flex-wrap">
             <ul class="footer-menu-container grow flex flex-col">
               <li class="grow"></li>
               <li class="grow">Makerbazar</li>
@@ -164,7 +166,7 @@
           </aside>
         </div>
         <main
-          class="box-border sm:mx-56 md:mx-24 lg:mx-56 pt-24 flex flex-col"
+          class="box-border md:mx-24 lg:mx-56 mx-10 pt-24 flex flex-col"
           id="footer-notes"
         ></main>
       </footer>
