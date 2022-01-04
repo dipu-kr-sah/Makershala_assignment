@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
 
     <title>Assignment</title>
   </head>
@@ -28,7 +32,7 @@
 
       <main>
         <ul
-          class="h-36 flex bg-[#6E07C7] w-full content-between row justify-around items-center text-white text-lg box-border pl-64"
+          class="min-h-36 max-h-max flex md:flex-row sm:flex-col bg-[#6E07C7] w-full content-between justify-around items-center text-white text-lg box-border pl-64"
         >
           <li class="text-yellow-500 cursor-pointer">Courses</li>
           <li class="cursor-pointer">
@@ -65,68 +69,49 @@
             <aside class="right"></aside>
           </div>
           <div class="main-content">
-            <main class="cards-container">
-              <div
-                class="card h-[25rem] bg-cover bg-[url(./images/gaint-wheel.jpg)] w-[18rem] rounded-2xl flex flex-col"
-              >
-                <header class="flex grow w-full"></header>
-                <footer
-                  class="info w-full bg-white h-3/5 flex flex-col rounded-b-2xl"
-                >
-                  <!-- <img src="" class="h-full" /> -->
-                  <p class="font-bold">
-                    Little Wizards - Clay Modelling competition 2021
-                  </p>
-                  <div class="icon-and-details flex flex-row">
-                    <span class="icon box-border mr-4"
-                      ><span class="material-icons-outlined"
-                        >calendar_today</span
-                      ></span
-                    >
-                    <span class="details grow">Hello</span>
-                  </div>
-                  <div class="line border-[1px] w-full"></div>
-
-                  <div
-                    data-text="Enter Now"
-                    class="box-border mt-2 flex justify-center items-center custom-button text-white"
-                  ></div>
-                </footer>
-              </div>
-            </main>
+            <main
+              class="cards-container flex flex-row flex-wrap w-full box-border px-16 justify-center items-center"
+              id="cards_list"
+            ></main>
           </div>
         </section>
       </main>
       <footer class="bg-[#6308BD] min-h-[300px] box-border py-24">
-        <div class="flex flex-row box-border mx-20 text-white h-[150px]">
-          <div class="image-container grow">
+        <div
+          class="flex md:flex-row flex-wrap sm:flex-col box-border mx-20 text-white min-h-[150px]"
+        >
+          <section
+            class="image-container box-border px-20 grow flex align-center justify-center"
+          >
             <img src="./images/makerShala.svg" class="h-full" />
-          </div>
-          <ul class="footer-menu-container grow flex flex-col">
-            <li class="grow"></li>
-            <li class="grow">Makerbazar</li>
-            <li class="grow">Markerkits</li>
-            <li class="grow">Makermentor</li>
-            <li class="grow">Makerlab</li>
-          </ul>
-          <ul class="footer-menu-container grow flex flex-col">
-            <li class="grow text-[#F2C94C]">About</li>
-            <li class="grow">Our Story</li>
-            <li class="grow">Benefits</li>
-            <li class="grow">Team</li>
-            <li class="grow">Careers</li>
-          </ul>
-          <ul class="footer-menu-container grow flex flex-col">
-            <li class="grow text-[#F2C94C]">Help</li>
-            <li class="grow">FAQs</li>
-            <li class="grow">Contact Us</li>
-            <li class="grow"></li>
-            <li class="grow"></li>
-            <li class="grow"></li>
-          </ul>
+          </section>
+          <aside class="flex flex-row grow box-border sm:px-20">
+            <ul class="footer-menu-container grow flex flex-col">
+              <li class="grow"></li>
+              <li class="grow">Makerbazar</li>
+              <li class="grow">Markerkits</li>
+              <li class="grow">Makermentor</li>
+              <li class="grow">Makerlab</li>
+            </ul>
+            <ul class="footer-menu-container grow flex flex-col">
+              <li class="grow">About</li>
+              <li class="grow">Our Story</li>
+              <li class="grow">Benefits</li>
+              <li class="grow">Team</li>
+              <li class="grow">Careers</li>
+            </ul>
+            <ul class="footer-menu-container grow flex flex-col">
+              <li class="grow">Help</li>
+              <li class="grow">FAQs</li>
+              <li class="grow">Contact Us</li>
+              <li class="grow"></li>
+              <li class="grow"></li>
+              <li class="grow"></li>
+            </ul>
+          </aside>
         </div>
         <main
-          class="box-border md:mx-24 lg:mx-56 pt-24 flex flex-col"
+          class="box-border sm:mx-56 md:mx-24 lg:mx-56 pt-24 flex flex-col"
           id="footer-notes"
         ></main>
       </footer>
