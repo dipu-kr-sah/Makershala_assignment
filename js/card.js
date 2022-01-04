@@ -112,7 +112,7 @@ const card = (
   const buttonClickRedirectUrl = "#";
   const deadLineDate = new Date();
   const template = `
-  <div class="card h-[29rem] w-[22rem] rounded-2xl flex flex-col box-border p-3">
+  <div class="card h-[29rem] w-[22rem] rounded-2xl flex flex-col box-border md:p-3 py-5 select-none">
                 <header
                   class="flex h-full grow w-full rounded-t-2xl bg-[length:100%_150%] bg-[url(${imageUrl})]"
                 ></header>

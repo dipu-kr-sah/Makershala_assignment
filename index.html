@@ -18,8 +18,10 @@
     <title>Assignment</title>
   </head>
   <body>
-    <div id="app">
-      <header class="flex h-10 items-center justify-center bg-yellow-400">
+    <div id="app" class="bg-[#F3F7FC]">
+      <header
+        class="flex h-10 items-center justify-center bg-yellow-400 text-sm"
+      >
         <span class="icon-left"></span>
         <span class="text-title flex align-center justify-center h-max">
           <span class="after:content-['\00a0']">
@@ -32,51 +34,102 @@
 
       <main>
         <ul
-          class="min-h-36 max-h-max flex md:flex-row sm:flex-col bg-[#6E07C7] w-full content-between justify-around items-center text-white text-lg box-border pl-64"
+          id="top_nav"
+          class="md:h-36 h-96 flex bg-[#6E07C7] w-full content-between md:justify-around justify-center md:items-center text-white text-lg box-border md:pl-20 md:flex-row flex-col"
         >
-          <li class="text-yellow-500 cursor-pointer">Courses</li>
-          <li class="cursor-pointer">
+          <li
+            class="text-yellow-500 cursor-pointer md:border-b-0 border-b-2 md:grow-0 grow box-border md:px-0 px-2"
+          >
+            Courses
+          </li>
+          <li
+            class="cursor-pointer border-b-2 md:border-b-0 flex md:flex-col flex-row md:grow-0 grow box-border md:px-0 px-2"
+          >
             <p>DIY Hub</p>
-            <span class="text-yellow-500 text-sm cursor-pointer"
+            <span
+              class="text-yellow-500 md:text-sm text-normal cursor-pointer md:after:content-[' '] md:before:content-[' '] before:content-['\00a0('] after:content-[')']"
               >comming soon</span
             >
           </li>
-          <li>
+          <li
+            class="md:order-none order-first md:grow-0 grow box-border md:px-0 px-2"
+          >
             <img
               class="h-full cursor-pointer"
               src="./images/makerShala.svg"
               alt="maker shala logo"
             />
           </li>
-          <li class="cursor-pointer">Competitions</li>
-          <li class="cursor-pointer">Blog</li>
-          <li data-text="Sign In" class="custom-button cursor-pointer">
-            SignIn
+          <li
+            class="cursor-pointer md:grow-0 grow md:border-b-0 border-b-2 box-border md:px-0 px-2"
+          >
+            Competitions
           </li>
+          <li
+            class="cursor-pointer md:border-b-0 border-b-2 md:grow-0 grow box-border md:px-0 px-2"
+          >
+            Blog
+          </li>
+          <li
+            data-text="Sign In"
+            class="custom-button cursor-pointer md:grow-0 grow box-border md:px-0 px-2"
+          ></li>
         </ul>
-        <section class="bg-[#F3F7FC] min-h-[100vh]">
+        <section class="min-h-[100vh]">
           <div class="head">
-            <aside class="left"></aside>
-            <div class="main-head flex-col flex justify-center items-center">
-              <h2 class="font-bold text-2xl h-max">Competitions</h2>
-              <br />
-              <p class="w-5/12 text-center">
-                Grow your project building skills by competing in our exciting
-                competitions. <br />You can compete as a team member or
-                individually.
-              </p>
+            <div class="main-head flex flex-row justify-center align-center">
+              <aside class="h-40 grow flex flex-col box-border px-6">
+                <div class="h-4 flex justify-center">
+                  <img class="h-full" src="./images/star.svg" />
+                </div>
+                <div class="h-12 flex justify-end">
+                  <img class="h-full" src="./images/medal.svg" />
+                </div>
+                <div class="h-16 flex justify-start">
+                  <img class="h-full rotate-12" src="./images/trophy.svg" />
+                </div>
+                <div class="h-4 flex justify-end">
+                  <img class="h-full" src="./images/star.svg" />
+                </div>
+              </aside>
+              <main class="flex flex-col justify-center items-center w-2/3">
+                <h2 class="font-bold text-2xl">Competitions</h2>
+                <!-- <br /> -->
+                <p class="w-full text-center">
+                  Grow your project building skills by competing in our exciting
+                  competitions.<br />You can compete as a team member or
+                  individually.
+                </p>
+              </main>
+              <aside class="h-40 grow flex flex-col box-border px-6">
+                <div class="h-4 flex justify-center">
+                  <img class="h-full" src="./images/star.svg" />
+                </div>
+                <div class="h-4 flex justify-end">
+                  <img class="h-full" src="./images/star.svg" />
+                </div>
+                <div class="h-16 flex justify-start">
+                  <img class="h-full rotate-12" src="./images/prize.svg" />
+                </div>
+                <div class="h-4 flex justify-end">
+                  <img class="h-full" src="./images/star.svg" />
+                </div>
+              </aside>
             </div>
-            <aside class="right"></aside>
           </div>
-          <div class="main-content">
+          <div class="main-content flex flex-row">
+            <aside></aside>
             <main
-              class="cards-container flex flex-row flex-wrap w-full box-border px-16 justify-center items-center"
+              class="cards-container flex flex-row flex-wrap w-full box-border px-16 justify-center items-center grow"
               id="cards_list"
             ></main>
+            <aside></aside>
           </div>
         </section>
       </main>
-      <footer class="bg-[#6308BD] min-h-[300px] box-border py-24">
+      <footer
+        class="min-h-[300px] box-border py-24 bg-[url(./images/footerBackground.svg)] bg-cover box-border pt-30"
+      >
         <div
           class="flex md:flex-row flex-wrap sm:flex-col box-border mx-20 text-white min-h-[150px]"
         >
